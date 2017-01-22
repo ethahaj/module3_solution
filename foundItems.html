@@ -1,0 +1,6 @@
+<ul>
+    <li ng-repeat="item in dirCtrl.directiveFoundList">{{item.name}}, {{item.short_name}}, {{item.description}}
+        <button ng-click="dirCtrl.directiveOnRemove({index:$index});">Remove Item</button>
+    </li>
+</ul>
+ <div ng-if="dirCtrl.directiveDisplayMessage">Nothing found</div>
